@@ -1,24 +1,30 @@
 /* Principle-1 */
 @keyframes principle-1 {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+    0% {left:-200px; top:0px;}
+    20% {left:100px; top:0px;}
+    50% {left:100px; top:0px;}
+    80% {left:100px; top:0px;}
+    100% {left:400px; top:0px;}
 }
 
 /* Principle-1 */
-#principle-1 div {
+.parentContainer {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+#principle-1 .parentContainer div {
     width: 100px;
     height: 100px;
+    border-radius: 2px;
     position: relative;
-    background-color: red;
+    background-color: white;
+    overflow:hidden;
+
     animation-name: principle-1;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    animation-delay: 2s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 
