@@ -69,7 +69,11 @@ section {
 }
 
 #principle-3 {
-  background-color: yellow;
+  background-color: teal;
+}
+
+#principle-4 {
+  background-color: rebeccapurple;
 }
 
 .content {
@@ -77,7 +81,24 @@ section {
   align-items: center;
 }
 
+p {
+  position: absolute;
+  z-index: 9;
+  justify-content: left;
+  align-items: left;
+  padding: 100px;
+  color: white;
+  margin: 0;
+}
 
+.parentContainer {
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
