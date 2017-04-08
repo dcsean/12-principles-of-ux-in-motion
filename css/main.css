@@ -68,12 +68,24 @@ section {
   background-color: pink;
 }
 
-#principle-3 {
+#principle-2 {
   background-color: teal;
 }
 
-#principle-4 {
+#principle-3 {
   background-color: rebeccapurple;
+}
+
+#principle-4 {
+  background-color: magenta;
+}
+
+#principle-5 {
+  background-color: black;
+}
+
+#principle-6 {
+  background-color: gray;
 }
 
 .content {
