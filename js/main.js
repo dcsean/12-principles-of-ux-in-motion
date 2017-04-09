@@ -1,11 +1,11 @@
 var element = document.getElementById("valueChange");
-var i = 1;
+var i = 10;
 
 
-setInterval( increment, 100);
+setInterval( increment, 50);
 
 function increment(){
-    i = i % 60 + 1;
-    element.innerHTML = i;
+    i = i % 100 + 1;
+    element.innerHTML = i + ' %';
     return i;
 }
