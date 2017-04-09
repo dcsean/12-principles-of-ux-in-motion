@@ -492,3 +492,53 @@
   overflow: hidden;
   margin: 5px 5px;
 }
+
+/* --------------------------- Principle-realtime ------------------------------ */
+@keyframes principle-realtime {
+  0% {transform: translateX(110px);}
+  30% {transform: translateX(110px);}
+  100% {transform: translateX(-110px);}
+}
+
+@keyframes principle-realtime-cursor {
+  0% {transform: translateX(110px) scale(0.6); opacity: 0;}
+  30% {transform: translateX(110px) scale(1); opacity: 1;}
+  100% {transform: translateX(-110px);}
+}
+
+#principle-realtime .parentContainer {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#principle-realtime .parentContainer div:not(.cursor) {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  height: 100px;
+  border-radius: 2px;
+  background-color: white;
+  overflow: hidden;
+  margin: 0px 10px;
+  animation-duration: 1.5s;
+  animation-name: principle-realtime;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.41,.21,.01,.99);
+}
+
+#principle-realtime .parentContainer div.cursor {
+  left:  52%;
+  flex-shrink: 0;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  overflow: hidden;
+  animation-duration: 1.5s;
+  animation-name: principle-realtime-cursor;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.41,.21,.01,.99);
+}
