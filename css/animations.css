@@ -17,7 +17,7 @@
   position: relative;
   width: 100px;
   height: 100px;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: white;
   overflow: hidden;
   animation-duration: 3s;
@@ -350,4 +350,145 @@
   border-radius: 3px;
   position: absolute;
   z-index: 0;
+}
+
+/* --------------------------- Principle-10 ------------------------------ */
+@keyframes principle-10-first {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes principle-10-second {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes principle-10-third {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+#principle-10 .parentContainer div:nth-child(1) {
+  position: relative;
+  width: 150px;
+  height: 80px;
+  background-color: #FFF;
+  border-radius: 3px;
+  z-index: 2;
+
+  animation-duration: 1s;
+  animation-name: principle-10-first;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.41,.21,.01,.99);
+}
+
+#principle-10 .parentContainer div:nth-child(2) {
+  position: relative;
+  background-color: #CCC;
+  width: 200px;
+  height: 80px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 1;
+
+  animation-duration: 1s;
+  animation-name: principle-10-second;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.41,.21,.01,.99);
+}
+
+#principle-10 .parentContainer div:nth-child(3) {
+  position: relative;
+  background-color: #666;
+  width: 250px;
+  height: 80px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 0;
+
+  animation-duration: 1s;
+  animation-name: principle-10-third;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.41,.21,.01,.99);
+}
+
+/* --------------------------- Principle-11 ------------------------------ */
+@keyframes principle-11 {
+  0% { transform: rotateY( 0deg );}
+  50% { transform: rotateY( -180deg ); background-color: gray;}
+  100% { transform: rotateY( 0deg ); }
+}
+
+#principle-11 .parentContainer {
+   perspective: 500px;
+}
+
+#principle-11 .parentContainer div {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  border-radius: 3px;
+  background-color: white;
+  overflow: hidden;
+  transform-style: preserve-3d;
+
+  animation-duration: 1.5s;
+  animation-name: principle-11;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.41,.21,.01,.99);
+}
+
+/* --------------------------- Principle-12 ------------------------------ */
+@keyframes principle-12 {
+  0% {transform: scale(1);}
+  30% {transform: scale(1);}
+  70% {transform: scale(3.1);}
+  100% {transform: scale(3.1);}
+}
+
+#principle-12 .parentContainer {
+  width: 340px;
+  height: 180px;
+  overflow: hidden;
+}
+
+#principle-12 .parentContainer section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  width: 340px;
+  height: 180px;
+  overflow: hidden;
+
+  animation-duration: 1.5s;
+  animation-name: principle-12;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.87,0,.11,.99);
+}
+
+#principle-12 .parentContainer section div {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: white;
+  overflow: hidden;
+  margin: 5px 5px;
 }

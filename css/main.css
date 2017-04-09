@@ -88,6 +88,10 @@ section {
   background-color: gray;
 }
 
+#principle-11 {
+  background-color: orange;
+}
+
 .content {
   justify-content: center;
   align-items: center;
