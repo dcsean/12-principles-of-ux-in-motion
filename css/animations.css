@@ -113,6 +113,7 @@
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.41,.21,.01,.99);
   transform-origin: bottom center;
+  opacity: 0.5;
 }
 
 /* --------------------------- Principle-4 ------------------------------ */

@@ -61,35 +61,7 @@ section {
   width: 100vW;
   height: 100vH;
   display: flex;
-  background-color: grey;
-}
-
-#principle-1 {
-  background-color: pink;
-}
-
-#principle-2 {
-  background-color: teal;
-}
-
-#principle-3 {
-  background-color: rebeccapurple;
-}
-
-#principle-4 {
-  background-color: magenta;
-}
-
-#principle-5 {
-  background-color: black;
-}
-
-#principle-6 {
-  background-color: gray;
-}
-
-#principle-11 {
-  background-color: orange;
+  background-color: #BEBEBE;
 }
 
 .content {
@@ -115,16 +87,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Media Queries
