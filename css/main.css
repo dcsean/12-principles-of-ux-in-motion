@@ -56,12 +56,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  overflow-x: hidden;
+}
 
-section {
+section#wrapper section {
   width: 100vW;
   height: 100vH;
   display: flex;
-  background-color: #BEBEBE;
 }
 
 .content {
@@ -86,6 +88,14 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+section#wrapper .block:nth-of-type(odd) {
+  background-color: #BEBEBE;
+}
+
+section#wrapper .block:nth-of-type(even) {
+  background-color: #A4A4A4;
 }
 
 /* ==========================================================================
